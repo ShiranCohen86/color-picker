@@ -1,0 +1,26 @@
+.preview-container {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: #d8d8d8;
+    display: grid;
+    // box-shadow: inset 28px 28px 6px 0 rgba(0, 0, 0, 0.4);
+    grid-template-columns: 27px 65px 172px 122px 172px 64px 27px;
+    grid-template-rows: 27px 68px 93px 139px 207px 69px 27px;
+
+    .checkerboard-svg {
+        grid-column: 2/-2;
+        grid-row: 2/-2;
+        background-image: url("../../assets/checkerboard.svg");
+    }
+    .shirt-svg {
+        grid-column: 3/-3;
+        grid-row: 3/-3;
+        background-image: url("../../assets/shirt.svg");
+    }
+    .logo-svg {
+        grid-column: 4/5;
+        grid-row: 4/5;
+        width: 122px;
+        height: 139px;
+    }
+}
