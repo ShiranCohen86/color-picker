@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/color-picker/static/css/main.e17a2441.css",
+    "main.js": "/color-picker/static/js/main.fb567ee8.js",
+    "static/js/787.57a5f452.chunk.js": "/color-picker/static/js/787.57a5f452.chunk.js",
+    "static/media/reallygood.svg": "/color-picker/static/media/reallygood.3d4838c28d06366d101ac1dc2e801da2.svg",
+    "static/media/shirt.svg": "/color-picker/static/media/shirt.068e081491c345d201d1.svg",
+    "index.html": "/color-picker/index.html",
+    "static/media/checkerboard.svg": "/color-picker/static/media/checkerboard.56aaaa280ee54861a75c.svg",
+    "main.e17a2441.css.map": "/color-picker/static/css/main.e17a2441.css.map",
+    "main.fb567ee8.js.map": "/color-picker/static/js/main.fb567ee8.js.map",
+    "787.57a5f452.chunk.js.map": "/color-picker/static/js/787.57a5f452.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e17a2441.css",
+    "static/js/main.fb567ee8.js"
+  ]
+}
