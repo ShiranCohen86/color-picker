@@ -31,28 +31,26 @@
         letter-spacing: normal;
         color: #000;
     }
+    .btn-preview::first-letter {
+        text-transform: capitalize;
+    }
     .btn-preview {
         display: flex;
         justify-content: space-around;
         align-items: center;
-
         grid-column: 2/7;
         grid-row: 6/7;
         color: white;
-        background: linear-gradient(to bottom, hsl(260, 100%, 50%) 30%, hsl(260, 100%, 60%) 70%);
+        background: radial-gradient(circle at 100% 0, var(--indigo), #220045 99%);
+        // background: linear-gradient(to bottom, hsl(260, 100%, 50%) 30%, hsl(260, 100%, 60%) 70%);
         border-radius: 10px;
         border: 5px solid white;
-        outline: hsl(260, 100%, 50%) solid 5px;
+        outline: var(--indigo) solid 5px;
         font-size: 30px;
-        font-family: arvo;
+        font-family: RobotoSlab;
         cursor: pointer;
         text-transform: lowercase;
     }
-
-    .btn-preview:first-letter {
-        text-transform: uppercase;
-    }
-
     .btn-preview::before {
         content: "\2B22";
         color: white;

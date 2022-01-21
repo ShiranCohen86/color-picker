@@ -1,0 +1,8 @@
+.main-layout {
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 160px 458px 27px 649px 146px;
+  grid-template-rows: 197px 1fr 197px;
+  background-image: radial-gradient(circle at 100% 0, var(--indigo), #220045 99%);
+  margin: 70px auto 0px auto;
+}

@@ -1,5 +1,4 @@
-import "./Preview.scss";
-import { ReactComponent as Logo } from "../../assets/reallygood.svg";
+import { ReactComponent as Logo } from "../../assets/imgs/reallygood.svg";
 
 export const Preview = () => {
   return (

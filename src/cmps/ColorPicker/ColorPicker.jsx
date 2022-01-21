@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./ColorPicker.scss";
 
 export const ColorPicker = () => {
   const [saturationPercentage, setSaturationPercentage] = useState(0);
