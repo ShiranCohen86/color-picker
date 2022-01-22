@@ -40,7 +40,7 @@ export const ColorPicker = () => {
   return (
     <form className="color-picker-container" onSubmit={changeLogoColor}>
       <div className="bitmap" onClick={pickColor}></div>
-      <div className="rectangle-color" style={{ backgroundColor: hslString(saturationPercentage, lightnessPercentage) }}></div>
+      <div className="rectangle-color" style={{ backgroundColor: hslString(saturationPercentage || 50, lightnessPercentage || 60) }}></div>
       <input
         type="text"
         className="hsl"
