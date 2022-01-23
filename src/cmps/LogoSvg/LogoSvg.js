@@ -9,7 +9,7 @@ export const LogoSvg = ({ color, className }) => {
 			xmlnsXlink="http://www.w3.org/1999/xlink"
 			className={className}
 		>
-			<g id="RG-Logo" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+		 	<g id="RG-Logo" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
 				<g id="ReallyGood">
 					<g id="Group">
 						<rect

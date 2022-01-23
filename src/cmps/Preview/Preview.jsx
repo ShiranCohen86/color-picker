@@ -1,6 +1,4 @@
-import { ReactComponent as Logo } from "../../assets/imgs/reallygood.svg";
-import ReactLogo from '../../assets/imgs/reallygood.svg';
-import { LogoSvg } from "../LogoSvg/LogoSvg";
+import { LogoSvg } from "../LogoSvg";
 
 export const Preview = ({color}) => {
 
