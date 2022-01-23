@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const ColorPicker = () => {
+export const ColorPicker = ({ changeLogoColor }) => {
   const [saturationPercentage, setSaturationPercentage] = useState(0);
   const [lightnessPercentage, setLightnessPercentage] = useState(0);
 
@@ -24,31 +24,24 @@ export const ColorPicker = () => {
     setLightnessPercentage(lightnessPercentage);
   };
 
-  const changeLogoColor = (ev) => {
+  const onChangeLogoColor = (ev) => {
     ev.preventDefault();
-    document
-      .querySelectorAll("#rg-hexagon, #rg-inner")
-      .forEach(
-        (logoPart) =>
-        (logoPart.style.fill = hslString(
-          saturationPercentage,
-          lightnessPercentage
-        ))
-      );
+    const color = hslString(saturationPercentage, lightnessPercentage);
+    changeLogoColor(color);
   };
 
   return (
-    <form className="color-picker-container" onSubmit={changeLogoColor}>
+    <form className="color-picker-container" onSubmit={onChangeLogoColor}>
       <div className="bitmap" onClick={pickColor}></div>
       <div className="rectangle-color" style={{ backgroundColor: hslString(saturationPercentage || 50, lightnessPercentage || 60) }}></div>
       <input
         type="text"
         className="hsl"
         value={hslString(saturationPercentage || 50, lightnessPercentage || 60)}
-        readonly
+        readOnly
       />
 
-      <button className="btn-preview" >PREVIEW</button>
+      <button className="btn-preview">PREVIEW</button>
     </form>
   );
 };
